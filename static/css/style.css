@@ -1,0 +1,112 @@
+.nav_black {
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a img,
+.social-icons a img {
+    transition: box-shadow 0.3s;
+}
+
+.container a:hover img,
+.social-icons a:hover img {
+    box-shadow: 0 0 10px blue;
+}
+
+.orange-bar {
+    background-color: orange;
+    color: rgb(254, 22, 22);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-hr {
+    width: 250px; 
+    align-items: center;
+    background-color: rgb(77, 77, 77); 
+    border-width: 2px;
+  }
+
+.whatsup-chat {
+    position: fixed;
+    bottom:15%;
+    right:10%;
+}
+
+.testimony {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+.testimony-content p {
+    font-size: 32px;
+    text-align: center;
+    font-family: cursive;
+}
+  
+.testimony-name h3 {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.form-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field textarea {
+    background-color: gray;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-box {
+    flex: 20%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 80%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-top: 10px;
+    padding: auto;
+}
+
+
+/* .thumbnail {
+    max-width: 300px;
+    max-height: 150px;
+    border: 1px solid black;
+} */
+
+

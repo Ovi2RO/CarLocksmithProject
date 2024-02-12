@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <hero class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10" style="color:white;">
+                <h1 class="text-center mt-4">Contact</h1>
+                <hr class="custom-hr mx-auto">
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-center mt-4 row-md-6 d-flex">
+            <div class="col-md-4 mt-4 mb-4">
+                <image src="{% static 'images/contact/contact.png' %}" style="width: 100%;">
+            </div>
+            <div class="col-md-6 align-items-center mt-4" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">Thank you for your interest in our car locksmith services. If you have any questions, concerns, or require assistance, please don’t hesitate to get in touch.</p>
+                <hr class="custom-hr mx-auto">
+                <br>
+                <h3>Contact information:</h3>
+                <p class="text-left" style="font-size: 24px;">Phone: <a href="tel:###tel no###" style="text-decoration: none; color: inherit;">###tel no###</a></p>
+                <p class="text-left" style="font-size: 24px;">eMail: example@email.com</p><br>
+                <h3 class="text-left">###City###</h3>
+            </div>
+        </div>
+    </hero>
+{% endblock %}
+

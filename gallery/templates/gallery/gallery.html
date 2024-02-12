@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <hero class="container mb-4">
+        <div class="col-md-10" style="color:white;">
+            <h1 class="text-center mt-4">Gallery</h1>
+            <hr class="custom-hr mx-auto mb-4">
+        </div>
+        <div class="image-row pt-4">
+            {% for picture in pictures %}
+                <div class="image-box">
+                    <a href="{{ picture }}" target="_blank">
+                        <img src="{{ picture }}" class="thumbnail">
+                        {% if picture.content %}
+                            <p>{{ picture.content }}</p>
+                        {% endif %}
+                    </a>
+                </div>
+            {% empty %}
+                <p class="">No images found!</p>
+            {% endfor %}
+        </div>
+        {% if user.is_authenticated %}
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="mb-4">
+                    <p class="text-white text-center">Tell</p>
+            
+                    <form action="{% url 'gallery' %}" method="post" class="text-white text-center" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            {% for field in form %}
+                            <label for="{{ field.id_for_label }}" class="text-white">{{ field.label }}</label>
+                            <div class="form-field">
+                                {{ field }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <input type="submit" value="Submit" style="background-color: gray; width: 150px; height: 50px;">
+                    </form>
+                </div>
+            </div>
+        {% endif %}
+    </hero>
+{% endblock %}
+

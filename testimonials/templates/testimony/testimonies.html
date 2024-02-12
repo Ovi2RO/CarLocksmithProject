@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <hero class="container mb-4">
+        <div class="col-md-10" style="color:white;">
+            <h1 class="text-center mt-4">Testimonials</h1>
+            <hr class="custom-hr mx-auto mb-4">
+        </div>
+        <div class="pt-4">
+            {% for testimony in testimonies %}
+                <div class="testimony">
+                    <div class="testimony-content">
+                        <p>&#10077; {{ testimony.content }} &#10078;</p>
+                    </div>
+                    <div class="testimony-name">
+                        <h3>{{ testimony.name }}</h3>
+                    </div>
+                    <hr class="custom-hr mx-auto mb-4">
+                </div>
+            {% empty %}
+                <p class="testimony text-center">Only shy customers so far!</p>
+            {% endfor %}
+        </div>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="mb-4">
+                <p class="text-white text-center">Tell us about your personal experience</p>
+        
+                <form action="{% url 'testimonials' %}" method="post" class="text-white text-center">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {% for field in form %}
+                        <label for="{{ field.id_for_label }}" class="text-white">{{ field.label }}</label>
+                        <div class="form-field">
+                            {{ field }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <input type="submit" value="Submit" style="background-color: gray; width: 150px; height: 50px;">
+                </form>
+            </div>
+        </div>
+        
+    </hero>
+{% endblock %}
+

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+    <hero class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10" style="color:white;">
+                <h1 class="text-center mt-4">About</h1>
+                <hr class="custom-hr mx-auto">
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-10 mb-4" style="color:white;">
+                <h2 class="text-center mt-4 mb-4"><strong style="color:blue;">Auto locksmith</strong> and <strong style="color:red;">emergency</strong> response in <strong style="color:blue;">###City###</strong></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4 row-md-6 d-flex">
+            <div class="col-md-4 mt-4">
+                <image src="{% static 'images/about/about1.jpg' %}" style="width: 100%;">
+            </div>
+            <div class="col-md-6 d-flex align-items-center" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">I am a car locksmith specialized in services such as car key replacement, car key cutting, car key programming, unlocking locked doors, ensuring security for lost or stolen keys, theft protection, and installing ghost 2 immobilizers. I operate with a fully equipped van that houses the latest equipment, and my services are available in ###City### and the surrounding counties.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4 mb-4 row-md-6 d-flex align-items-center">
+            <div class="col-md-6 align-items-center" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">I am a highly trained auto locksmith engineer ready to handle car locksmith services for almost any make and model of vehicles.</p>
+                <p class="text-center" style="font-size: 22px;">The exact replacement process may vary depending on your car, but typically, it involves disassembling the dashboard and steering column to remove the faulty ignition barrel. It is then replaced with a new cylinder. The entire process usually takes a couple of hours, after which your car will be ready to use again.</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <image src="{% static 'images/about/about2.jpg' %}" style="width: 100%;">
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4 row-md-6 d-flex">
+            <div class="col-md-4 mt-4">
+                <image src="{% static 'images/about/about3.jpg' %}" style="width: 100%;">
+            </div>
+            <div class="col-md-6 d-flex align-items-center" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">A damaged car ignition switch can occur due to wear and tear or as a result of a forced action. Common signs of a damaged ignition switch include the key not turning in the ignition switch, the key not going into the ignition switch, the key not coming out of the ignition switch, inability to turn the key, inability to start the car, no lights on the dashboard, and no crank. These issues indicate that there may be a problem with the ignition switch that needs to be addressed.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4 mb-4 row-md-6 d-flex align-items-center">
+            <div class="col-md-6 align-items-center" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">Common car models that often require locksmith services include:</p>
+                <div style="display:flex; justify-content: space-between;">
+                    <div class="d-flex flex-column align-items-lg-start">
+                        <p class="text-center" style="font-size: 18px;">&#9991; Honda CR-V, Accord, Civic, Jazz</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Volkswagen (VW) Golf, Polo, Crafter</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Audi A3, TT</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Seat Leon, Altea</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-lg-start">
+                        <p class="text-center" style="font-size: 18px;">&#9991; Skoda Octavia, Superb, Fabia, Yeti</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Nissan Qashqai, Primastar, Micra, Pulsar</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Renault Traffic, Kangoo, Clio</p>
+                        <p class="text-center" style="font-size: 18px;">&#9991; Vauxhall Vivaro, Antara, Insignia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <image src="{% static 'images/about/cars_logo.jpg' %}" style="width: 100%;">
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6 align-items-center" style="color:white;">
+                <p class="text-center" style="font-size: 22px;">Common car models that often require locksmith services include:</p>
+                <div class="d-flex flex-column align-items-lg-center">
+                    <p class="text-center" style="font-size: 18px;">&#9991; KIA</p>
+                    <p class="text-center" style="font-size: 18px;">&#9991; Hyundai</p>
+                    <p class="text-center" style="font-size: 18px;">&#9991; Citroen Relay</p>
+                    <p class="text-center" style="font-size: 18px;">&#9991; Peugeot Bipper</p>
+                </div>  
+                <hr class="custom-hr mx-auto">
+            </div>
+        </div>
+    </hero>
+{% endblock %}
+

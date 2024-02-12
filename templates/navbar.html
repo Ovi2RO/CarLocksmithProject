@@ -1,0 +1,37 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<body>
+    <nav class="navbar border-bottom border-body nav_black shadow-sm" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'landing' %}">
+                <img src="{% static 'images/key_logo.png' %}" alt="Logo" width="150">
+            </a>
+
+            <h3 style="color: white;">Watford London</h3>
+
+            <form class="social-icons">
+                <a class="navbar-brand" href="###link to fb###">
+                    <img src="{% static 'images/facebook.png' %}" width="30">
+                </a>
+                <a class="navbar-brand" href="###link to yt###">
+                    <img src="{% static 'images/youtube.png' %}" width="30">
+                </a>
+                <a class="navbar-brand" href="###link to insta###">
+                    <img src="{% static 'images/instagram.png' %}" width="30">
+                </a>
+                <a class="navbar-brand" href="###link to tik###">
+                    <img src="{% static 'images/tiktok.png' %}" width="30">
+                </a>                
+            </form>
+        </div>
+
+        <form class="container-fluid justify-content-center">
+            <a type="button" class="btn btn-dark m-2" href="{% url 'about' %}">About</a>
+            <a type="button" class="btn btn-dark m-2" href="{% url 'services' %}">Services</a>
+            <a type="button" class="btn btn-dark m-2" href="{% url 'gallery' %}">Gallery</a>
+            <a type="button" class="btn btn-dark m-2" href="{% url 'testimonials' %}">Testimonials</a>
+            <a type="button" class="btn btn-dark m-2" href="{% url 'contact' %}">Contact</a>
+        </form>
+    </nav>
+</body>

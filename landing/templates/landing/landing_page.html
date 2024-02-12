@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <hero class="container mb-4">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10" style="color:white;">
+                <h1 class="text-center mt-4 pb-4">
+                    Looking for a reliable car locksmith in <strong style="color:blue;">###City###</strong>?
+                </h1>
+                <h1 class="text-center mt-4">I offer <strong style="color:red;">round-the-clock</strong> emergency locksmith services for all car brands and models.</h1>
+                <h4 class="text-center mt-4">Get fast and professional:</h4>
+                <div class="container mt-4 d-flex flex-column align-items-center justify-content-center">
+                    
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#key_lockout" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Car lockout</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#key_replace" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Key replacement</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#key_cutting" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Key cutting</span>
+                        </a>
+                    </div>
+                    
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#key_programming" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Key programming</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#locked_doors" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Unlocking locked doors</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#theft_protection" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Theft protection</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#g2_immobilizers" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Installing Ghost2 immobilizers</span>
+                        </a>
+                    </div>
+
+                    <div class="flex-column">
+                        <a href="{% url 'services' %}#ignition_repair" class="btn btn-secondary btn-lg flex-column" style="font-size: 24px; width: 400px; height: 100px; display: flex; align-items: center; margin:5px; background-color: #111;">
+                            <span style="display: inline-block; text-align: center;">&#9881;</span>
+                            <span style="display: inline-block; text-align: center;">Ignition switch repair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4 mb">
+            <video src="{% static 'video/landing/intro.mp4' %}" controls style="width: 100%; max-width: 700px;"></video>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-10 mb-4" style="color:white;">
+                <h2 class="text-center mt-4 mb-4">Auto locksmith and emergency response in <strong style="color:blue;">###City###</strong></h2>
+            </div>
+        </div>
+    </hero>
+
+
+{% endblock %}
+
+
+
+
+ 
